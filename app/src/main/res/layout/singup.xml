@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="signup"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="5dp"
+                android:layout_below="@+id/tvsignup"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/cardview_shadow_start_color" />
+
+            <ScrollView
+                android:id="@+id/sv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvsignup"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:id="@+id/firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/edname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="text"
+                        android:includeFontPadding="true"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:maxLength="50"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/firstname"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EmailAddress"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/edemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10dp"
+                            android:maxLength="256"
+                            android:inputType="text"
+                            android:includeFontPadding="true"
+                            android:paddingLeft="15dp"
+                             />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/firstname"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            android:text="PhoneNumber"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/edphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:includeFontPadding="true"
+                            android:paddingLeft="15dp"
+                            android:maxLength="14"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Password"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/edpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:includeFontPadding="true"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/black"
+
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Singup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sv"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:text="signup"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
